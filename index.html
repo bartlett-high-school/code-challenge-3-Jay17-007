@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<!-- Head Tag -->
+	<head>
+		<title>Code Challenge #3</title>
+
 <!-- Code Challenge #3 | Worth up to 25 Points 
-
 Step 1: Organize the information inside the body tag into a HTML table with 2 columns and 11 rows. You will have 1 header row and 10 content rows. 
-
 Step 2: Use CSS to style your table to make it more aesthetically pleasing.
-
 You may use Google as a resource. -->
 
 <!DOCTYPE html>
@@ -15,43 +18,91 @@ You may use Google as a resource. -->
 		<!-- CSS Link -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
+	<style>
+	tbody, th, tr, td {
+		border: solid 1px #ddd;
+		border-collapse: collapse;
+		padding: 1%;
+		font-weight: bold;
+
+	}
+
+	table {
+		width: 100%;
+	}
+
+	tr:nth-child(even) {
+		background-color: #008B8B;
+	}
+
+	h1 {
+		text-align: center;
+		background-color: #FFFACD;
+		padding: 5%;
+	}
+	</style>
 
 	<!-- Body Tag -->
 	<body>
 
 		<!-- Table Content: Organize the following content into an HTML table. -->
-		Name
-		Points Earned
+		<table>
+			<thead>
+				<h1>Treehouse Scores</h1>
+			</thead>
+			<tbody>
+				<th>Name</th>
+				<th>Points Earned</th>
 
-		Zach Gates
-		15036
+				<tr>
+				<td>Zach Gates</td>
+				<td>15036</td>
+				</tr>
 
-		Stefan Heng
-		3424
+				<tr>
+				<td>Stefan Heng</td>
+				<td>3424</td>
+				</tr>
 
-		Michael Brooks
-		2921
+				<tr>
+				<td>Michael Brooks</td>
+				<td>2921</td>
+				</tr>
 
-		Jay Sabio
-		2359
+				<tr>
+				<td>Jay Sabio</td>
+				<td>2359</td>
+				</tr>
+				
+				<tr>
+				<td>Imani Montilla</td>
+				<td>2127</td>
+				</tr>
 
-		Imani Montilla
-		2127
+				<tr>
+				<td>Jordan Simmons</td>
+				<td>1951</td>
+				</tr>
 
-		Jordan Simmons
-		1951
+				<tr>
+				<td>Dylan Olson</td>
+				<td>1811</td>
+				</tr>
 
-		Dylan Olson
-		1811
+				<tr>
+				<td>Ryan Harker</td>
+				<td>1696</td>
+				</tr>
 
-		Ryan Harker
-		1696
+				<tr>
+				<td>Josh Sabio</td>
+				<td>1696</td>
+				</tr>
 
-		Josh Sabio
-		1696
-
-		Ryan Higginbotham
-		1616
-
+				<tr>
+				<td>Ryan Higginbotham</td>
+				<td>1616</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
-</html>
